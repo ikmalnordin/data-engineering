@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # STEP 1a: Insert password and username
+USERNAME=
+PASSWORD=
 
 # STEP 1b: SOURCE has to be defined in Cloud Shell or added in line below. 
 # e.g. SOURCE=https://transtats.bts.gov/PREZIP
@@ -26,7 +28,7 @@ ZIPFILE=${TMPDIR}/${YEAR}_${MONTH2}.zip
 echo $ZIPFILE
 
 #STEP 3: make sure that this url follows pattern of client website
-curl -o $ZIPFILE ${BASEURL}_${YEAR}_${MONTH}.zip
+curl -o $ZIPFILE --user $USERNAME:$PASSWORD ${BASEURL}_${YEAR}_${MONTH}.zip
 unzip -d $TMPDIR $ZIPFILE
 
 mv $TMPDIR/*.csv ./${YEAR}${MONTH2}.csv

@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# STEP 1: SOURCE has to be defined in Cloud Shell or added in line below. 
+# STEP 1a: Insert password and username
+
+# STEP 1b: SOURCE has to be defined in Cloud Shell or added in line below. 
 # e.g. SOURCE=https://transtats.bts.gov/PREZIP
 
 if test "$#" -ne 2; then

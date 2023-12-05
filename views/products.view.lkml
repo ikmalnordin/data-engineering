@@ -1,4 +1,4 @@
-view: ecomm_products {
+view: products {
   sql_table_name: `matrixc-demo.looker_demo.ecomm_products` ;;
   drill_fields: [id]
 

@@ -1,4 +1,4 @@
-view: ecomm_distribution_centres {
+view: distribution_centres {
   sql_table_name: `matrixc-demo.looker_demo.ecomm_distribution_centres` ;;
   drill_fields: [id]
 

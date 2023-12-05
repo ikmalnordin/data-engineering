@@ -1,4 +1,4 @@
-view: ecomm_events {
+view: events {
   sql_table_name: `matrixc-demo.looker_demo.ecomm_events` ;;
   drill_fields: [id]
 

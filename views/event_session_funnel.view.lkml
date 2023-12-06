@@ -66,7 +66,7 @@ view: event_session_funnel {
 
   dimension: time_in_funnel {
     type: number
-    sql: datediff(min, ${event1_raw},COALESCE(${event3_raw},${event2_raw})) ;;
+    sql: date_diff(min, ${event1_raw},COALESCE(${event3_raw},${event2_raw})) ;;
   }
 
   measure: count_sessions {

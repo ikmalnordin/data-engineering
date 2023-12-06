@@ -20,7 +20,7 @@ view: event_session_funnel {
               THEN created_at
               ELSE NULL END
             ) as event3_time
-      FROM `matrixc-demo.looker_demo.events`
+      FROM `matrixc-demo.looker_demo.ecomm_events`
       GROUP BY 1
  ;;
   }

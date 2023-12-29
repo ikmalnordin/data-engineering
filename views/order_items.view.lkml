@@ -1,5 +1,5 @@
 view: order_items {
-  sql_table_name: `matrix-demo.looker_demo.ecomm_order_items`
+  sql_table_name: `matrixc-demo.looker_demo.ecomm_order_items`
     ;;
   drill_fields: [order_item_id]
 
